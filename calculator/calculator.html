@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">    
+    <table class="calculator__table">
+      <tr class="calculator__table--output--row">
+        <td colspan="4">
+          <input class="calculator__table--output" type="text" value="0" data-status="" disabled>
+          <!-- <input class="calculator__table--output" type="text" value="test" disabled> -->
+        </td>
+      </tr>
+      <tr>
+        <td><button class="btn--calculator btn--calculator--control" value="+" keycode="43">&#43;</button></td>
+        <td><button class="btn--calculator btn--calculator--control" value="-" keycode="45">&#8722;</button></td>
+        <td><button class="btn--calculator btn--calculator--control" value="*" keycode="42">&#215;</button></td>
+        <td><button class="btn--calculator btn--calculator--control" value="/" keycode="47">&#247;</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn--calculator btn--calculator--number" value="7" keycode="55">7</button></td>
+        <td><button class="btn--calculator btn--calculator--number" value="8" keycode="56">8</button></td>
+        <td><button class="btn--calculator btn--calculator--number" value="9" keycode="57">9</button></td>
+        <td><button class="btn--calculator btn--calculator--delete" value="backspace" keycode="8"><</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn--calculator btn--calculator--number" value="4" keycode="52">4</button></td>
+        <td><button class="btn--calculator btn--calculator--number" value="5" keycode="53">5</button></td>
+        <td><button class="btn--calculator btn--calculator--number" value="6" keycode="54">6</button></td>
+        <td><button class="btn--calculator btn--calculator--clear" value="clear" keycode="99">c</button></td>
+      </tr>
+      <tr>
+        <td><button class="btn--calculator btn--calculator--number" value="1" keycode="49">1</button></td>
+        <td><button class="btn--calculator btn--calculator--number" value="2" keycode="50">2</button></td>
+        <td><button class="btn--calculator btn--calculator--number" value="3" keycode="51">3</button></td>
+        <td rowspan="2"><button class="btn--calculator btn--calculator--equal" value="equal" keycode="13">&#61;</button></td>
+      </tr>
+      <tr>
+        <td colspan="2"><button class="btn--calculator btn--calculator--number" value="0" keycode="48">0</button></td>
+        <td><button class="btn--calculator btn--calculator--comma" value="." keycode="46">.</button></td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    &copy; JustArya
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
